@@ -31,7 +31,7 @@ Read all premium articles of medium for free 🤑. Just install it, go to medium
 
 ### Useful Links
 
-- [How to install a Chrome extension without using the Chrome Web Store](https://blog.hunter.io/how-to-install-a-chrome-extension-without-using-the-chrome-web-store-31902c780034)
+- [How to install a Chrome extension without using the Chrome Web Store](https://medium.com/@FGrante/how-to-install-a-chrome-extension-without-using-the-chrome-web-store-31902c780034)
 
 ### Perks
 
