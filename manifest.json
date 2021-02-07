@@ -1,0 +1,29 @@
+{
+  "name": "Spoofly",
+  "version": "1.0",
+  "author": "Shekh Aliul",
+  "description": "An extension to read premium articles of medium for free. Just install and read your favorite articles!",
+  "permissions": [
+    "cookies",
+    "storage",
+    "tabs",
+    "http://medium.com/*",
+    "https://medium.com/*",
+    "http://.medium.com/*",
+    "https://.medium.com/*",
+    "https://*.medium.com/*",
+    "http://*.medium.com/*",
+    "nativeMessaging"
+  ],
+  "icons": {"16": "icon.png", "48": "icon.png", "128": "icon.png"},
+  "browser_action": {
+    "default_title": "Cookie Cleaner",
+    "default_icon": "icon.png",
+    "default_popup": "index.html"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "manifest_version": 2
+}
