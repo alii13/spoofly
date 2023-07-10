@@ -1,9 +1,13 @@
 name: Greetings
 
-on: [pull_request_target, issues]
+on:
+  push:
+    branches:
+      - staging
 
 jobs:
   greeting:
+   	if: contains(${GITHUB_REF##*/}, 'INSIG')
     runs-on: ubuntu-latest
     permissions:
       issues: write
