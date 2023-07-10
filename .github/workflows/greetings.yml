@@ -1,0 +1,22 @@
+---
+name: Greetings
+on:
+  push:
+    branches:
+      - staging
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+      - name: Get branch name
+        run: echo "branch=${GITHUB_REF#refs/heads/}" >> $GITHUB_OUTPUT
+        id: get_branch
+      - if: contains(${{ steps.get_branch.outputs.branch }}, 'INSIG')
+        uses: actions/first-interaction@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-message: Message that will be displayed on users' first issue
+          pr-message: Message that will be displayed on users' first pull request
