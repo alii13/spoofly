@@ -1,7 +1,7 @@
 ---
 name: Greetings
 on:
-  push:
+  pull_request:
     branches:
       - staging
 jobs:
